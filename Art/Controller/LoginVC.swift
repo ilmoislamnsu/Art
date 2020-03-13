@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import FirebaseAuth
 
 class LoginVC: UIViewController {
     
@@ -40,6 +41,7 @@ class LoginVC: UIViewController {
                 return
             }
             self.activityIndicator.stopAnimating()
+            self.dismiss(animated: true, completion: nil)
             print("Login Was Successful")
         }
     }

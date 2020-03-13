@@ -7,16 +7,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--LoginVC-->
         <scene sceneID="wdK-zc-gFZ">
             <objects>
-                <viewController id="Lr4-dL-mwR" sceneMemberID="viewController">
+                <viewController id="Lr4-dL-mwR" customClass="LoginVC" customModule="Art" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ryt-XO-UC5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_left1" translatesAutoresizingMaskIntoConstraints="NO" id="pns-g4-ISU">
-                                <rect key="frame" x="0.0" y="88" width="414.00000000000045" height="808"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="4Rd-fi-eeS">
                                 <rect key="frame" x="20" y="108" width="374" height="327.5"/>
@@ -41,7 +41,7 @@
                                             <constraint firstAttribute="height" constant="40" id="IVV-Q6-OPn"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zmn-ng-Hp5">
                                         <rect key="frame" x="0.0" y="136.5" width="374" height="35"/>
@@ -49,6 +49,9 @@
                                         <state key="normal" title="Forgot Password?">
                                             <color key="titleColor" red="1" green="0.32052664600000003" blue="0.19141306990000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="forgotPassClicked:" destination="Lr4-dL-mwR" eventType="touchUpInside" id="IAL-nX-51U"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tug-4i-dPQ" customClass="RoundedButton" customModule="Art" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="183.5" width="374" height="40"/>
@@ -60,6 +63,9 @@
                                         <state key="normal" title="Login">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="loginClicked:" destination="Lr4-dL-mwR" eventType="touchUpInside" id="Yda-ki-CVJ"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IXn-Ug-qwx" customClass="RoundedButton" customModule="Art" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="235.5" width="374" height="40"/>
@@ -85,6 +91,9 @@
                                         <state key="normal" title="Continue as a guest">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="guestClicked:" destination="Lr4-dL-mwR" eventType="touchUpInside" id="yb2-pV-nhi"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -108,10 +117,15 @@
                         <viewLayoutGuide key="safeArea" id="bbs-R3-6rJ"/>
                     </view>
                     <navigationItem key="navigationItem" id="OkD-uZ-uca"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="fC0-be-Lho" id="pNZ-4U-YM0"/>
+                        <outlet property="emailTxt" destination="85d-kB-22I" id="Sn7-Qf-v8h"/>
+                        <outlet property="passwordTxt" destination="sgV-Ny-OGR" id="UVx-qM-167"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GCf-2Q-2em" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1013.0434782608696" y="182.8125"/>
+            <point key="canvasLocation" x="893" y="183"/>
         </scene>
         <!--RegisterVC-->
         <scene sceneID="uoS-17-HHl">
@@ -231,7 +245,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lIX-u8-WOT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1792.753623188406" y="183.48214285714286"/>
+            <point key="canvasLocation" x="1690" y="183"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="cL2-cs-8hD">

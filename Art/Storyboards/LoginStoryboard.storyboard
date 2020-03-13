@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Igd-Ms-oF2">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_left1" translatesAutoresizingMaskIntoConstraints="NO" id="pns-g4-ISU">
-                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <rect key="frame" x="0.0" y="88" width="414.00000000000045" height="808"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="4Rd-fi-eeS">
                                 <rect key="frame" x="20" y="108" width="374" height="327.5"/>
@@ -50,7 +50,7 @@
                                             <color key="titleColor" red="1" green="0.32052664600000003" blue="0.19141306990000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tug-4i-dPQ">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tug-4i-dPQ" customClass="RoundedButton" customModule="Art" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="183.5" width="374" height="40"/>
                                         <color key="backgroundColor" red="0.27249175310000001" green="0.39491999150000001" blue="0.69809550050000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
@@ -61,7 +61,7 @@
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IXn-Ug-qwx">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IXn-Ug-qwx" customClass="RoundedButton" customModule="Art" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="235.5" width="374" height="40"/>
                                         <color key="backgroundColor" red="1" green="0.32052664600000003" blue="0.19141306990000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -75,7 +75,7 @@
                                             <segue destination="VX0-WR-EOU" kind="show" id="cok-zf-U11"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h31-su-MNb">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h31-su-MNb" customClass="RoundedButton" customModule="Art" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="287.5" width="374" height="40"/>
                                         <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -113,10 +113,10 @@
             </objects>
             <point key="canvasLocation" x="1013.0434782608696" y="182.8125"/>
         </scene>
-        <!--View Controller-->
+        <!--RegisterVC-->
         <scene sceneID="uoS-17-HHl">
             <objects>
-                <viewController id="VX0-WR-EOU" sceneMemberID="viewController">
+                <viewController id="VX0-WR-EOU" customClass="RegisterVC" customModule="Art" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Z0R-hW-JwD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -165,7 +165,7 @@
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MD6-To-S9k">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MD6-To-S9k" customClass="RoundedButton" customModule="Art" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="242.5" width="374" height="40"/>
                                         <color key="backgroundColor" red="0.27249175310000001" green="0.39491999150000001" blue="0.69809550050000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
@@ -175,21 +175,24 @@
                                         <state key="normal" title="Register">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="registerClicked:" destination="VX0-WR-EOU" eventType="touchUpInside" id="DaC-BV-RVE"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="Xch-ZD-Iqc">
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="Xch-ZD-Iqc">
                                 <rect key="frame" x="188.5" y="410.5" width="37" height="37"/>
                                 <color key="color" red="0.27249175310000001" green="0.39491999150000001" blue="0.69809550050000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </activityIndicatorView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="red_check" translatesAutoresizingMaskIntoConstraints="NO" id="GvV-4p-UIq">
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="red_check" translatesAutoresizingMaskIntoConstraints="NO" id="GvV-4p-UIq">
                                 <rect key="frame" x="352" y="251.5" width="30" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="30" id="HOe-04-Zjm"/>
                                     <constraint firstAttribute="height" constant="30" id="PIA-hY-bdW"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="red_check" translatesAutoresizingMaskIntoConstraints="NO" id="e89-hb-XsY">
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="red_check" translatesAutoresizingMaskIntoConstraints="NO" id="e89-hb-XsY">
                                 <rect key="frame" x="352" y="303.5" width="30" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="30" id="572-4r-ekI"/>
@@ -216,6 +219,15 @@
                         <viewLayoutGuide key="safeArea" id="pRg-FC-aqA"/>
                     </view>
                     <navigationItem key="navigationItem" id="3yE-5h-xEn"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="Xch-ZD-Iqc" id="6OZ-NZ-uYG"/>
+                        <outlet property="confirmCheckImage" destination="e89-hb-XsY" id="KTn-C1-YWa"/>
+                        <outlet property="confirmPasswordTxt" destination="cOf-Hi-InO" id="xW5-fV-qxO"/>
+                        <outlet property="emailTxt" destination="Er1-hM-O2R" id="wFa-Zr-ihG"/>
+                        <outlet property="passwordCheckImage" destination="GvV-4p-UIq" id="94L-7m-qGz"/>
+                        <outlet property="passwordTxt" destination="vx0-Np-6NO" id="rgX-7j-Qjo"/>
+                        <outlet property="usernameTxt" destination="Slb-hk-0f7" id="F2w-Et-fQu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lIX-u8-WOT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -224,7 +236,7 @@
         <!--Navigation Controller-->
         <scene sceneID="cL2-cs-8hD">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Igd-Ms-oF2" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="LoginVC" automaticallyAdjustsScrollViewInsets="NO" id="Igd-Ms-oF2" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2UG-bR-ycZ">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
